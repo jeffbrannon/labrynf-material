@@ -1,5 +1,3 @@
-@import "./variables";
-
 body {
   font-family: Arial, sans-serif;
 }
@@ -35,39 +33,6 @@ body {
   background-position: center center;
 }
 
-
-
-.crane-header {
-  display: flex;
-  align-items: center;
-
-  background-color: $crane-primary-color;
-  color: #fff;
-  font-size: 1.2rem;
-
-  height: 4rem;
-  padding-left: $crane-main-padding * 2;
-
-  @media (max-width: $crane-header-breakpoint) {
-    padding-left: $crane-main-padding;
-  }
-}
-
-.crane-main {
-  max-width: $crane-main-max-width;
-  margin: $crane-main-padding auto;
-  padding: 0 $crane-main-padding;
-}
-
-.crane-row {
-  display: flex;
-  margin-bottom: $crane-row-margin;
-
-  @media (max-width: $crane-row-breakpoint) {
-    flex-direction: column;
-  }
-}
-
 .crane-row--submit {
   flex-direction: row;
   justify-content: flex-end;
@@ -77,15 +42,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-
-.crane-field + .crane-field {
-  margin-left: 16px;
-
-  @media (max-width: $crane-row-breakpoint) {
-    margin-left: 0;
-    margin-top: $crane-row-margin;
-  }
 }
 
 .crane-button {
